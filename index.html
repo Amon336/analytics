@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f0c855a91.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/Subtract.png">
+    <title>Analytics</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="connectedsections">
+                <div class="firstsectionofmenu">
+                    <a href="" class="logo">
+                        <img src="./img/Subtract.png" alt="">
+                        ANALYTICS
+                    </a>
+                    <div class="menu" id="menu">
+                        <a href="#products">
+                            Products
+                        </a>
+                        <a href="#prices">
+                            Pricing
+                        </a>
+                        <a href="#FAQ">
+                            FAQ
+                        </a>
+                        <a href="#blog">
+                            Blog
+                        </a>
+                        <a href="" class="tohide">
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <div class="secondsectionofmenu">
+                    <a href="">Sign in</a>
+                    <a href="" id="mobilehide">Sign up</a>
+                    <img src="./img/menu-icon.png" alt="" id="bars">
+                    <i class="fa-solid fa-xmark" id="xmark"></i>
+                </div>
+            </div>
+        </nav>
+        <section class="monitorbussiness">
+            <div class="texts">
+                <h1>Monitor your business<br>on real-time dashboard</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum <br> nisi aliquet volutpat pellentesque volutpat est. <br>Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+                <button>
+                    Try for free
+                </button>
+            </div>
+            <div class="dashboard">
+                <div class="dashboardimg" id="dashimg"></div>
+                <div class="procents" id="procents">
+                    <div>
+                        <p>Ages</p>
+                        <img src="./img/Ellipse 3.png" alt="" id="firstelipse" onmouseenter="torotatefirst()">
+                        <img src="./img/Ellipse 2.png" alt="" id="secondelipse" onmouseenter="torotatesecond()">
+                        <p id="ages">55-64</p>
+                    </div>
+                    <div class="options">
+                        <h2 id="blueprocent">0%</h2>
+                        <p>option 1</p>
+                        <h2 id="redprocent">0%</h2>
+                        <p>option 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="blog">
+        <section class="mainFeatures">
+            <div class="maininfo">
+                <h1>Main features</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ducimus eos vero! Minima, optio. Qui facilis iste exercitationem ipsam quaerat porro repellendus perferendis repudiandae architecto! Doloribus natus quos inventore nulla?</p>
+                <div class="mainrow">
+                    <div class="column">
+                        <img src="./img/time.png" alt="">
+                        <h2>Monitoring 24/7</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis
+                            <br>cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./img/vidget.png" alt="">
+                        <h2>Widget System</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis
+                            <br>cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./img/speed.png" alt="" id="rocketanimation">
+                        <h2>Best Performance</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipis
+                            <br>cing elit. Elementum nisi aliquet volutpat.</p>
+                    </div>
+                </div>
+                <div class="about" id="FAQ">
+                    <div class="aboutrow">
+                        <div>
+                            <h1>Automated Reports <br>& Widget Alerts</h1>
+                            <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatibus cumque, <br>culpa ex aliquid necessitatibus explicabo porro quos commodi perferendis, <br>excepturi sed quisquam, obcaecati libero? Quo quasi praesentium cupiditate ipsum voluptas!</p>
+                        </div>
+                        <div class="imgabout"></div>
+                    </div>
+                    <div class="aboutrow mobilecolumn">
+                        <div class="imgabout age"></div>
+                        <div>
+                            <h1>Fully customizable <br> to address your needs </h1>
+                            <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatibus cumque, <br>culpa ex aliquid necessitatibus explicabo porro quos commodi perferendis, <br>excepturi sed quisquam, obcaecati libero? Quo quasi praesentium cupiditate ipsum voluptas!</p>
+                        </div>
+                    </div>
+                    <div class="aboutrow">
+                        <div>
+                            <h1>Automated Reports <br>& Widget Alerts</h1>
+                            <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatibus cumque, <br>culpa ex aliquid necessitatibus explicabo porro quos commodi perferendis, <br>excepturi sed quisquam, obcaecati libero? Quo quasi praesentium cupiditate ipsum voluptas!</p>
+                        </div>
+                        <div class="backgroundcalendar">
+                            <div class="calendar">
+                                <div class="calendar-day">MON</div>
+                                <div class="calendar-day">TUE</div>
+                                <div class="calendar-day">WED</div>
+                                <div class="calendar-day">THU</div>
+                                <div class="calendar-day">FRI</div>
+                                <div class="calendar-day">SAT</div>
+                                <div class="calendar-day">SUN</div>
+                                <div></div>
+                                <div class="calendar-date" onclick="tored('first')" id="first">1</div>
+                                <div class="calendar-date"onclick="tored('second')" id="second">2</div>
+                                <div class="calendar-date"onclick="tored('third')" id="third">3</div>
+                                <div class="calendar-date"onclick="tored('fourth')" id="fourth">4</div>
+                                <div class="calendar-date"onclick="tored('fifth')" id="fifth">5</div>
+                                <div class="calendar-date"onclick="tored('sixth')" id="sixth">6</div>
+                                <div class="calendar-date" onclick="tored('seventh')" id="seventh">7</div>
+                                <div class="calendar-date" onclick="tored('eighth')" id="eighth">8</div>
+                                <div class="calendar-date" onclick="tored('nineth')" id="nineth">9</div>
+                                <div class="calendar-date" onclick="tored('tenth')" id="tenth">10</div>
+                                <div class="calendar-date" onclick="tored('elev')" id="elev">11</div>
+                                <div class="calendar-date" onclick="tored('twe')" id="twe">12</div>
+                                <div class="calendar-date" onclick="tored('thirt')" id="thirt">13</div>
+                                <div class="calendar-date" onclick="tored('fourt')" id="fourt">14</div>
+                                <div class="calendar-date" onclick="tored('fift')" id="fift">15</div>
+                                <div class="calendar-date" onclick="tored('sixt')" id="sixt">16</div>
+                                <div class="calendar-date" onclick="tored('sevent')" id="sevent">17</div>
+                                <div class="calendar-date" onclick="tored('eighteen')" id="eighteen">18</div>
+                                <div class="calendar-date" onclick="tored('ninet')" id="ninet">19</div>
+                                <div class="calendar-date" onclick="tored('twent')" id="twent">20</div>
+                                <div class="calendar-date" onclick="tored('twent1')" id="twent1">21</div>
+                                <div class="calendar-date" onclick="tored('twent2')" id="twent2">22</div>
+                                <div class="calendar-date" onclick="tored('twent3')" id="twent3">23</div>
+                                <div class="calendar-date" onclick="tored('twent4')" id="twent4">24</div>
+                                <div class="calendar-date" onclick="tored('twent5')" id="twent5">25</div>
+                                <div class="calendar-date" onclick="tored('twent6')" id="twent6">26</div>
+                                <div class="calendar-date" onclick="tored('twent7')" id="twent7">27</div>
+                                <div class="calendar-date" onclick="tored('twent8')" id="twent8">28</div>
+                                <div class="calendar-date" onclick="tored('twent9')" id="twent9">29</div>
+                                <div class="calendar-date" onclick="tored('thirty')" id="thirty">30</div>
+                                <div class="calendar-date" onclick="tored('thirty1')" id="thirty1">31</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="PricingPlans" id="products">
+            <h1>Pricing plans</h1>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. </p>
+                <div class="prices" id="prices">
+                    <div class="price">
+                        <div style="border-bottom: 2px solid #D3D9E9; width: 70%; margin: auto;">
+                            <h1>Starter</h1>
+                            <p>up to 3 users</p>
+                        </div>
+                        <h1>$29</h1>
+                        <p>per month</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="price">
+                        <div style="border-bottom: 2px solid #D3D9E9; width: 70%; margin: auto;">
+                            <h1>Standart</h1>
+                            <p>up to 20 users</p>
+                        </div>
+                        <h1>$99</h1>
+                        <p>per month</p>
+                        <button>Order</button>
+                    </div>
+                    <div class="price">
+                        <div style="border-bottom: 2px solid #D3D9E9; width: 70%; margin: auto;">
+                            <h1>Premium</h1>
+                            <p>up to 200 users</p>
+                        </div>
+                        <h1>$299</h1>
+                        <p>per month</p>
+                        <button>Order</button>
+                    </div>
+                </div>
+                <div class="podval">
+                    <a href="" class="footerlogo">
+                        <img src="./img/footerlogo.png" alt="">
+                        ANALYTICS
+                    </a>
+                    <div class="socialNetworks">
+                        <a href=""><i class="fa fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/papapevegemabodi_/#" target="_blank"><i class="fa fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+        </section>
+    </footer>
+</body>
+<script src="./scripts/script.js"></script>
+</html>
